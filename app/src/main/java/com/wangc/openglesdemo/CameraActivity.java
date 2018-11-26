@@ -167,6 +167,8 @@ public class CameraActivity extends AppCompatActivity {
                 Camera.Parameters parameters = mCamera.getParameters();
                 //设置预览数据格式
                 parameters.setPreviewFormat(ImageFormat.NV21);
+                parameters.setPreviewSize(parameters.getSupportedPreviewSizes().get(0).width,parameters.getSupportedPreviewSizes().get(0).height);
+                parameters.setPictureSize(parameters.getSupportedPictureSizes().get(0).width,parameters.getSupportedPictureSizes().get(0).height);
                 mCamera.setParameters(parameters);
                 mCamera.startPreview();
             } catch (IOException e) {

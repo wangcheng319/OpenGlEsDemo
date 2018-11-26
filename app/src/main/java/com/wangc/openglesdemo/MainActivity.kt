@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         sample_text.text = stringFromJNI()
 
         btn_camera.setOnClickListener { startActivity(intent.setClass(this,CameraActivity::class.java)) }
+        btn_audio_record.setOnClickListener { startActivity(intent.setClass(this,AudioRecordActivity::class.java)) }
     }
 
     /**

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AudioRecordActivity">
+
+    <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    android:text="start"/>
+
+    <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn_start"
+            android:text="stop"/>
+
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:id="@+id/btn_play" android:text="play" app:layout_constraintTop_toBottomOf="@+id/btn_stop"/>
+
+</android.support.constraint.ConstraintLayout>
